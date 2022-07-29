@@ -1,0 +1,165 @@
+/* palette */
+/* Light steel blue #afc2d5,  */
+/* Midnight green #004E64, */
+/* Moss green #758e4f,  */
+/* Sage #b2ac88,  */
+/* Cinnabar #d64933,	 */
+
+/* Fonts */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Oleo Script', cursive; */
+
+body {
+	margin: 0 0 10px 0;
+	text-align: center;
+	background: linear-gradient(#004E64, #AFC2D5, #B2AC88, #004E64);
+}
+
+#header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Oleo Script', cursive;
+	font-weight: regular;
+	/* font-size: 24px; */
+	color: white;
+	/* text-shadow: 0 0 4px black; */
+	margin-bottom: 40px;
+}
+
+#hero {
+	height: 400px;
+	width: 100%;
+	background-image: url("images/header.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 40px 0px 100px 0px;
+	border-bottom: 4px solid white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero-background {
+	background: #004E64;
+	padding: 20px 10px;
+	line-height: 2px;
+	margin: 5px;
+}
+
+.section {
+	font-family: 'Oleo Script', cursive;
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.wedding-img {
+	width: 300px;
+	border: 4px solid white;
+}
+
+.item {
+	/* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: center;
+    /* The width of the container also implies margin around the images. */
+    width: 300px;
+}
+
+
+#item-fireworks {
+	/* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: center;
+    /* The width of the container also implies margin around the images. */
+    width: 500px;
+}
+
+.caption {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+#fireworks-img {
+	width: 500px;
+	border: 4px solid white;
+}
+
+#footer {
+	margin-top: 70px;
+}
+
+#footer-h3 {
+	font-family: 'Oleo Script', cursive;
+	font-size: 30px;
+}
+
+#footer-p {
+	font-family: 'Montserrat', sans-serif;
+	width: 800px;
+	margin: 40px auto 0px auto;
+	text-align: justify;
+}
+
+#footer-img {
+	width: 800px;
+	border: 4px solid white;
+}
+
+#copyright {
+	margin-top: 50px;
+}
+
+.underline {
+	border-bottom: 4px solid white;
+}
+
+.italic {
+	font-style: italic;
+}
+
+/* The 3 overlay classes below are the code for the full-screen images on click */
+.overlay {
+  /* Display over the entire page */
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+
+  /* Horizontal and vertical centering of the image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* We hide all this by default */
+  visibility: hidden;
+}
+
+.overlay img{
+  /* Maximum image size */
+  max-width: 90%;
+  max-height: 90%;
+
+  /* We keep the ratio of the image */
+  width: auto;
+  height: auto;
+}
+
+.overlay:target {
+  visibility: visible;
+  outline: none;
+  cursor: default;
+}
